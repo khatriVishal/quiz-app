@@ -1,41 +1,53 @@
 console.log("yes");
 let correct = 0;
-
+// a) Vincent van Gogh
+// b) Pablo Picasso
+// c) Leonardo da Vinci
+// d) Michelangelo
 let question = [
 {
-  question : "Akash ka kisne kata?",
+  question : "What is the capital of Australia?",
    answer :[
-    {text:"aayushi",correct:"false"},
-     {text:"mohit" , correct:"false"}, 
-    {text:"kisine nahi" , correct:"false"},
-    {text:"dono ne (mohit and ayushi)" , correct:"true"}
+    {text:"Sydney",correct:"false"},
+     {text:"Melbourne" , correct:"false"}, 
+    {text:"Canberra" , correct:"true"},
+    {text:"Perth" , correct:"false"}
    ]
 },
 {
-    question : "Mohit ki kitni gf hai?",
+    question : "Who painted the Mona Lisa?",
      answer :[
-      {text:"1",correct:"false"},
-       {text:"2" , correct:"false"}, 
-      {text:"3" , correct:"false"},
-      {text:"Uske toh bf hai" , correct:"true"}
+      {text:"Vincent van Gogh",correct:"false"},
+       {text:"Pablo Picasso" , correct:"false"}, 
+      {text:"Leonardo da Vinci" , correct:"true"},
+      {text:"Michelangelo" , correct:"false"}
      ]
 },
 {
-    question : "Mohit ka bff kaun hai?",
+    question : "What is the largest ocean in the world?",
      answer :[
-      {text:"aditi",correct:"false"},
-       {text:"bhaskar" , correct:"false"}, 
-      {text:"abhishek" , correct:"false"},
-      {text:"woh toh mohit hi bta sakta hai" , correct:"true"}
+      {text:"Atlantic Ocean",correct:"false"},
+       {text:"Indian Ocean" , correct:"false"}, 
+      {text:"Arctic Ocean" , correct:"false"},
+      {text:"Pacific Ocean" , correct:"true"}
      ]
   },
   {
-    question : "College se package ka kya umeed hai?",
+    question : `Which planet is known as the "Red Planet"?`,
      answer :[
-      {text:"1-3 lpa",correct:"false"},
-       {text:"3-8 lpa" , correct:"false"}, 
-      {text:"8-12 lpa" , correct:"false"},
-      {text:"koi ummed nhi hai" , correct:"true"}
+      {text:"Venus",correct:"false"},
+       {text:"Mars" , correct:"true"}, 
+      {text:"Jupiter" , correct:"false"},
+      {text:"Saturn" , correct:"false"}
+     ]
+  },
+  {
+    question : `Who wrote the play "Romeo and Juliet"?`,
+     answer :[
+      {text:"William Shakespeare",correct:"true"},
+       {text:"Jane Austen" , correct:"false"}, 
+      {text:"Charles Dickens" , correct:"false"},
+      {text:"F. Scott Fitzgerald" , correct:"false"}
      ]
   }
 
@@ -90,7 +102,7 @@ while(answer.firstChild){
 currquestion++;
 if(currquestion == question.length)
 {
-    questionelement.innerHTML = `Yay you solved ${correct}/4 questions`;
+    questionelement.innerHTML = `Yay you solved ${correct}/5 questions`;
 }
 console.log(currquestion);
 showquestion();
